@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#step1: Promt the user to enter a number for multiplication table.
+#step1: Prompt the user to enter a number for multiplication table.
 
 read -p " enter number for multiplication table: " number
 
@@ -11,11 +11,11 @@ read -p " do you want a full table (f) or partial table (P)? " table_type
 #step3 : If partial, prompt for the start and end number of the range.
 
 
-if ["$table_type" = "p"]; then
+if [ "$table_type" = "p" ]; then
 	#get the starting number of the range.
 read -p " enter the start number of the range: " start
         #get the ending number of the range.
-read -p " enter the end number of the ranger: " end
+read -p " enter the end number of the range: " end
 
 #step4 : validate the range inputs.
 if [ "$start" -gt "$end" ]; then
